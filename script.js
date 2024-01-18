@@ -30,35 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function createEventCard(event) {
-    const eventCard = document.createElement("div");
-    eventCard.classList.add("event-card");
-
-    const image = document.createElement("img");
-    image.src = event.image;
-    image.alt = event.title;
-
-    const title = document.createElement("h3");
-    title.textContent = event.title;
-
-    const eventType = document.createElement("p");
-    eventType.textContent = `Tipo: ${event.type}`;
-
-    const dateTime = document.createElement("p");
-    dateTime.textContent = `Fecha/Hora: ${event.date} ${event.time}`;
-
-    const maxParticipants = document.createElement("p");
-    maxParticipants.textContent = `Máximo de participantes: ${event.maxParticipants}`;
-
-    const description = document.createElement("p");
-    description.textContent = event.description;
-
-    eventCard.appendChild(image);
-    eventCard.appendChild(title);
-    eventCard.appendChild(eventType);
-    eventCard.appendChild(dateTime);
-    eventCard.appendChild(maxParticipants);
-    eventCard.appendChild(description);
-
-    return eventCard;
-}
+fetch("http://localhost:3000/policeLine")
+.then((package) => package.json())

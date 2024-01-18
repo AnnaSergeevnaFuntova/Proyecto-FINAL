@@ -1,28 +1,28 @@
 {
-    "police line": [
-      {
-        "id": 1,
-        "name": "Producto 1",
-        "description": "soy el producto 1",
-        "image": "src/assets/img/screenshot-1.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Producto 2",
-        "description": "soy el producto 2",
-        "image": "src/assets/img/screenshot-1.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Producto 3",
-        "description": "soy el producto 3",
-        "image": "src/assets/img/screenshot-1.jpg"
-      },
-      {
-        "id": 4,
-        "name": "Producto 4",
-        "description": "soy el producto 4",
-        "image": "src/assets/img/screenshot-1.jpg"
-      }
-    ]
-  }
+  "policeLine": [
+    {
+      "id": 1,
+      "name": "Producto 1",
+      "description": "soy el producto 1",
+      "image": "src/assets/img/screenshot-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Producto 2",
+      "description": "soy el producto 2",
+      "image": "src/assets/img/screenshot-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Producto 3",
+      "description": "soy el producto 3",
+      "image": "src/assets/img/screenshot-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Producto 4",
+      "description": "soy el producto 4",
+      "image": "src/assets/img/screenshot-1.jpg"
+    }
+  ]
+}
