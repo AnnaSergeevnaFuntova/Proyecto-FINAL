@@ -95,15 +95,28 @@ main {
     transform: scale(0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+.event-card {
+    border: 2px solid #ddd;
+    padding: 10px; /* Reducir el relleno interno */
+    margin-right: 10px; /* Agregar un margen derecho para separar los elementos */
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(0.9); /* Establecer un tamaño inicial más pequeño */
+    display: inline-block; /* Hacer que los elementos estén en línea */
+}
 
-
+.event-card:hover {
+    transform: scale(1); /* Ajustar el tamaño al 100% al pasar el cursor sobre el elemento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: flex;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    
 }
+

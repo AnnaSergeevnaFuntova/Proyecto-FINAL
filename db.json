@@ -1,28 +1,139 @@
 {
-  "policeLine": [
+  "categories": [
     {
-      "id": 1,
-      "name": "Producto 1",
-      "description": "soy el producto 1",
-      "image": "src/assets/img/screenshot-1.jpg"
+      "name": "Policía Nacional",
+      "events": [
+        {
+          "title": "Conferencia 1",
+          "type": "Conferencia",
+          "description": "Descripción de la Conferencia 1",
+          "image": "url_de_la_imagen1.jpg",
+          "location": "Lugar de la Conferencia 1",
+          "date": "2024-05-01"
+        },
+        {
+          "title": "Taller 1",
+          "type": "Taller",
+          "description": "Descripción del Taller 1",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Taller 1",
+          "date": "2024-05-15"
+        },
+        {
+          "title": "seguridad 1",
+          "type": "Seguridad",
+          "description": "Descripción del Seguridad 1",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Seguridad 1",
+          "date": "2024-05-15"
+        },
+        {
+          "title": "Informacion 1",
+          "type": "Informacion",
+          "description": "Descripción del Informacion 1",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Informacion 1",
+          "date": "2024-05-15"
+        },
+        {
+          "title": "Novedades 1",
+          "type": "Novedades",
+          "description": "Descripción del Novedades 1",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Novedades 1",
+          "date": "2024-05-15"
+        }
+      ]
     },
     {
-      "id": 2,
-      "name": "Producto 2",
-      "description": "soy el producto 2",
-      "image": "src/assets/img/screenshot-1.jpg"
+      "name": "Policía Local",
+      "events": [
+        {
+          "title": "Conferencia 2",
+          "type": "Conferencia",
+          "description": "Descripción de la Conferencia 2",
+          "image": "url_de_la_imagen3.jpg",
+          "location": "Lugar de la Conferencia 2",
+          "date": "2024-06-01"
+        },
+        {
+          "title": "Taller 2",
+          "type": "Taller",
+          "description": "Descripción del Taller 2",
+          "image": "url_de_la_imagen4.jpg",
+          "location": "Lugar del Taller 2",
+          "date": "2024-06-15"
+        },
+        {
+          "title": "seguridad 2",
+          "type": "Seguridad",
+          "description": "Descripción del Seguridad 2",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Seguridad 2",
+          "date": "2024-05-15"
+        },
+        {
+          "title": "Informacion 2",
+          "type": "Informacion",
+          "description": "Descripción del Informacion 2",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Informacion 2",
+          "date": "2024-05-15"
+        },
+        {
+          "title": "Novedades 2",
+          "type": "Novedades",
+          "description": "Descripción del Novedades 2",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Novedades 2",
+          "date": "2024-05-15"
+        }
+      ]
     },
     {
-      "id": 3,
-      "name": "Producto 3",
-      "description": "soy el producto 3",
-      "image": "src/assets/img/screenshot-1.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Producto 4",
-      "description": "soy el producto 4",
-      "image": "src/assets/img/screenshot-1.jpg"
+      "name": "Mossos d'esquadra ",
+      "events": [
+        {
+          "title": "Conferencia 3",
+          "type": "Conferencia",
+          "description": "Descripción de la Conferencia 3",
+          "image": "url_de_la_imagen3.jpg",
+          "location": "Lugar de la Conferencia 3",
+          "date": "2024-06-01"
+        },
+        {
+          "title": "Taller 3",
+          "type": "Taller",
+          "description": "Descripción del Taller 2",
+          "image": "url_de_la_imagen4.jpg",
+          "location": "Lugar del Taller 2",
+          "date": "2024-06-15"
+        },
+        {
+          "title": "Seguridad 3",
+          "type": "Seguridad",
+          "description": "Descripción de la Seguridad 3",
+          "image": "url_de_la_imagen5.jpg",
+          "location": "Lugar de la Seguridad 3",
+          "date": "2024-07-01"
+        },
+        {
+          "title": "Información 3",
+          "type": "Información",
+          "description": "Descripción de la Información 3",
+          "image": "url_de_la_imagen6.jpg",
+          "location": "Lugar de la Información 3",
+          "date": "2024-07-15"
+        },
+        {
+          "title": "Novedades 3",
+          "type": "Novedades",
+          "description": "Descripción del Novedades 3",
+          "image": "url_de_la_imagen2.jpg",
+          "location": "Lugar del Novedades 3",
+          "date": "2024-05-15"
+        }
+      ]
     }
   ]
 }
