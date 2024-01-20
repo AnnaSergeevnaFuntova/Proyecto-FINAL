@@ -72,3 +72,75 @@ document.addEventListener("DOMContentLoaded", function () {
   
     return card;
   }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Event listener para el botón de contacto
+    document.getElementById("contactoButton").addEventListener("click", function () {
+        openModal();
+    });
+
+
+  
+
+    // Event listener para el botón de contacto
+    document.getElementById("contactoButton").addEventListener("click", function () {
+      openModal();
+  });
+
+  // Event listener para el botón de registro
+  document.getElementById("registroButton").addEventListener("click", function () {
+      alert("Haz clic en REGISTRO. Aquí puedes poner el código para mostrar la ventana de registro.");
+  });
+
+  // Event listener para cerrar el modal
+  document.getElementById("closeModal").addEventListener("click", function () {
+      closeModal();
+  });
+
+  // Event listener para enviar el formulario
+  document.getElementById("submitBtn").addEventListener("click", function () {
+      submitForm();
+  });
+
+  // Función para cerrar el modal
+  function closeModal() {
+      document.getElementById("contactModal").style.display = "none";
+  }
+
+  // Función para mostrar el modal debajo del botón
+  function openModal() {
+      const contactoButton = document.getElementById("contactoButton");
+      const modal = document.getElementById("contactModal");
+
+      // Obtén las coordenadas del botón
+      const rect = contactoButton.getBoundingClientRect();
+
+      // Calcula la posición para el modal
+      const topPosition = rect.bottom + window.scrollY + 10; // 10 es el espacio entre el botón y el modal
+      const leftPosition = rect.left + window.scrollX;
+
+      // Establece la posición del modal
+      modal.style.top = `${topPosition}px`;
+      modal.style.left = `${leftPosition}px`;
+
+      // Muestra el modal
+      modal.style.display = "block";
+  }
+
+  // Función para enviar el formulario
+  function submitForm() {
+      // Obtén los valores de los campos de contacto
+      const nombre = document.getElementById("nombre").value;
+      const telefono = document.getElementById("telefono").value;
+      const email = document.getElementById("email").value;
+      const codigoPostal = document.getElementById("codigoPostal").value;
+
+      // Aquí puedes realizar acciones con los valores, como enviarlos a un servidor
+
+      // Cierra el modal después de enviar el formulario
+      closeModal();
+  }
+});
+
+
