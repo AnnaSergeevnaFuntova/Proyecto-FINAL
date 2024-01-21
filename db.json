@@ -6,41 +6,41 @@
         {
           "title": "Conferencia 1",
           "type": "Conferencia",
-          "description": "Descripción de la Conferencia 1",
-          "image": "url_de_la_imagen1.jpg",
-          "location": "Lugar de la Conferencia 1",
+          "description": "Descripción",
+          "image": "imagens/OIP (5).jpg",
+          "location": "Lugar",
           "date": "2024-05-01"
         },
         {
           "title": "Taller 1",
           "type": "Taller",
-          "description": "Descripción del Taller 1",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Taller 1",
+          "description": "Descripción",
+          "image": "imagens/fotonoticia_20180723153354_640.jpg",
+          "location": "Lugar",
           "date": "2024-05-15"
         },
         {
           "title": "seguridad 1",
           "type": "Seguridad",
-          "description": "Descripción del Seguridad 1",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Seguridad 1",
+          "description": "Descripción",
+          "image": "imagens/Escuela_Nacional_Policia_España_Clase.jpg",
+          "location": "Lugar",
           "date": "2024-05-15"
         },
         {
           "title": "Informacion 1",
           "type": "Informacion",
-          "description": "Descripción del Informacion 1",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Informacion 1",
+          "description": "Descripción",
+          "image": "imagens/admitidos-a-plazas-de-policia-nacional-768x512.jpg",
+          "location": "Lugar",
           "date": "2024-05-15"
         },
         {
-          "title": "Novedades 1",
-          "type": "Novedades",
-          "description": "Descripción del Novedades 1",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Novedades 1",
+          "title": "Noticias 1",
+          "type": "Noticias",
+          "description": "Descripción",
+          "image": "imagens/OIP (4).jpg",
+          "location": "Lugar",
           "date": "2024-05-15"
         }
       ]
@@ -68,7 +68,7 @@
           "title": "seguridad 2",
           "type": "Seguridad",
           "description": "Descripción del Seguridad 2",
-          "image": "url_de_la_imagen2.jpg",
+          "image": "imagens/OposicionesPolociaLocalparaTodaEspaña.jpg",
           "location": "Lugar del Seguridad 2",
           "date": "2024-05-15"
         },

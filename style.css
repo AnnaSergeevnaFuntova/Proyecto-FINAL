@@ -95,10 +95,13 @@ main {
 }
 
 .event-card:hover {
-  transform: scale(
-    1
-  ); /* Ajustar el tamaño al 100% al pasar el cursor sobre el elemento */
+  transform: scale(1); /* Ajustar el tamaño al 100% al pasar el cursor sobre el elemento */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.event-card img {
+  width: 200px; /* Establecer un ancho específico */
+  height: auto; /* Hacer que la altura se ajuste automáticamente para mantener la proporción */
 }
 
 footer {
