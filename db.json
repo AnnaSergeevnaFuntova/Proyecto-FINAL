@@ -7,7 +7,7 @@
           "title": "Conferencia 1",
           "type": "Conferencia",
           "description": "Descripción",
-          "image": "imagens/OIP (5).jpg",
+          "image": "imagens/OIP (1).jpg",
           "location": "Lugar",
           "date": "2024-05-01"
         },
@@ -68,7 +68,7 @@
           "title": "seguridad 2",
           "type": "Seguridad",
           "description": "Descripción del Seguridad 2",
-          "image": "imagens/OposicionesPolociaLocalparaTodaEspaña.jpg",
+          "image": "",
           "location": "Lugar del Seguridad 2",
           "date": "2024-05-15"
         },
