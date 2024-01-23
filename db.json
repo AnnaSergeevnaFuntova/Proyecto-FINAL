@@ -5,7 +5,7 @@
       "events": [
         {
           "title": "Conferencia 1",
-          "type": "Conferencia",
+          "type": "Conferencias",
           "description": "Descripción",
           "image": "imagens/OIP (1).jpg",
           "location": "Lugar",
@@ -50,42 +50,42 @@
       "events": [
         {
           "title": "Conferencia 2",
-          "type": "Conferencia",
-          "description": "Descripción de la Conferencia 2",
+          "type": "Conferencias",
+          "description": "Descripción",
           "image": "url_de_la_imagen3.jpg",
-          "location": "Lugar de la Conferencia 2",
+          "location": "Lugar",
           "date": "2024-06-01"
         },
         {
           "title": "Taller 2",
           "type": "Taller",
-          "description": "Descripción del Taller 2",
+          "description": "Descripción",
           "image": "url_de_la_imagen4.jpg",
-          "location": "Lugar del Taller 2",
+          "location": "Lugar",
           "date": "2024-06-15"
         },
         {
           "title": "seguridad 2",
           "type": "Seguridad",
-          "description": "Descripción del Seguridad 2",
+          "description": "Descripción",
           "image": "",
-          "location": "Lugar del Seguridad 2",
+          "location": "Lugar",
           "date": "2024-05-15"
         },
         {
           "title": "Informacion 2",
           "type": "Informacion",
-          "description": "Descripción del Informacion 2",
+          "description": "Descripción",
           "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Informacion 2",
+          "location": "Lugar",
           "date": "2024-05-15"
         },
         {
-          "title": "Novedades 2",
-          "type": "Novedades",
-          "description": "Descripción del Novedades 2",
+          "title": "Noticias 2",
+          "type": "Noticias",
+          "description": "Descripción",
           "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Novedades 2",
+          "location": "Lugar",
           "date": "2024-05-15"
         }
       ]
@@ -95,42 +95,42 @@
       "events": [
         {
           "title": "Conferencia 3",
-          "type": "Conferencia",
-          "description": "Descripción de la Conferencia 3",
+          "type": "Conferencias",
+          "description": "Descripción",
           "image": "url_de_la_imagen3.jpg",
-          "location": "Lugar de la Conferencia 3",
+          "location": "Lugar",
           "date": "2024-06-01"
         },
         {
           "title": "Taller 3",
           "type": "Taller",
-          "description": "Descripción del Taller 2",
+          "description": "Descripción",
           "image": "url_de_la_imagen4.jpg",
-          "location": "Lugar del Taller 2",
+          "location": "Lugar",
           "date": "2024-06-15"
         },
         {
           "title": "Seguridad 3",
           "type": "Seguridad",
-          "description": "Descripción de la Seguridad 3",
+          "description": "Descripción",
           "image": "url_de_la_imagen5.jpg",
-          "location": "Lugar de la Seguridad 3",
+          "location": "Lugar",
           "date": "2024-07-01"
         },
         {
           "title": "Información 3",
           "type": "Información",
-          "description": "Descripción de la Información 3",
+          "description": "Descripción",
           "image": "url_de_la_imagen6.jpg",
-          "location": "Lugar de la Información 3",
+          "location": "Lugar",
           "date": "2024-07-15"
         },
         {
-          "title": "Novedades 3",
-          "type": "Novedades",
-          "description": "Descripción del Novedades 3",
+          "title": "Noticias 3",
+          "type": "Noticias",
+          "description": "Descripción",
           "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar del Novedades 3",
+          "location": "Lugar",
           "date": "2024-05-15"
         }
       ]

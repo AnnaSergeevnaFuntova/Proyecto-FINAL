@@ -45,6 +45,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Logo
+document.addEventListener("DOMContentLoaded", function() {
+  // Selecciona el enlace del logo por su id
+  var logoLink = document.getElementById("logoLink");
+
+  // Agrega un evento de clic al enlace del logo
+  logoLink.addEventListener("click", function(event) {
+    // Evita que el enlace realice la acción por defecto (navegar a la página actual)
+    event.preventDefault();
+
+    // Redirige a la página principal (ajusta la URL según tu estructura de directorios y nombre de página principal)
+    window.location.href = "index.html"; // Cambia "index.html" al nombre de tu página principal
+  });
+});
+
 function buscarEventos() {
   const searchText = document.getElementById("searchInput").value.toLowerCase();
 
@@ -116,7 +131,8 @@ function createEventCard(event) {
   return card;
 }
 
-function openModal() {
+ // Modales
+function openContactModal() {
   const contactoButton = document.getElementById("contactoButton");
   const modal = document.getElementById("contactModal");
 
@@ -135,12 +151,34 @@ function openModal() {
   modal.style.display = "block";
 }
 
-function closeModal() {
-  document.getElementById("contactModal").style.display = "none";
+function openRegistroModal() {
+  const registroButton = document.getElementById("registroButton");
+  const modal = document.getElementById("registroModal");
+
+  // Obtén las coordenadas del botón
+  const rect = registroButton.getBoundingClientRect();
+
+  // Calcula la posición para el modal
+  const topPosition = rect.bottom + window.scrollY + 10; // 10 es el espacio entre el botón y el modal
+  const leftPosition = rect.left + window.scrollX;
+
+  // Establece la posición del modal
+  modal.style.top = `${topPosition}px`;
+  modal.style.left = `${leftPosition}px`;
+
+  // Muestra el modal
+  modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
 }
 
 function submitForm() {
   // Aquí puedes agregar la lógica para enviar el formulario
   alert("Formulario enviado");
-  closeModal();
+  closeModal("contactModal");
+  closeModal("registroModal");
 }
+
+

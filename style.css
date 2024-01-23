@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #ebe7e7; /* Color gris claro */
 }
 
 header {
@@ -10,7 +11,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 140px;
+  padding: 160px 0; /* Eliminamos el relleno en los lados y ajustamos el relleno en la parte superior e inferior */
+  margin: 0; /* Agregamos margen 0 para que no haya espacio en los lados */
   text-align: center;
   color: rgb(247, 245, 245); /* Color del texto del título */
 }
@@ -40,7 +42,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 main {
@@ -86,12 +88,19 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .event-card {
-  border: 1px solid #ddd;
+  border: 1px solid #faf7f7;
   padding: 5px; /* Reducir el relleno interno */
   margin-right: 10px; /* Agregar un margen derecho para separar los elementos */
   transition: transform 0.3s, box-shadow 0.3s;
   transform: scale(0.9); /* Establecer un tamaño inicial más pequeño */
+  width: calc(20% - 10px); /* Calcula el ancho para que haya 5 elementos por fila, considerando el margen */
+  box-sizing: border-box; /* Incluir el borde y el relleno en el ancho y alto totales */
   display: inline-block; /* Hacer que los elementos estén en línea */
+}
+
+/* Limpiar el margen derecho del último elemento */
+.event-card:last-child {
+  margin-right: 0;
 }
 
 .event-card:hover {
@@ -100,7 +109,7 @@ main {
 }
 
 .event-card img {
-  width: 200px; /* Establecer un ancho específico */
+  width: 100%; /* Establecer un ancho del 100% para ocupar completamente el contenedor */
   height: auto; /* Hacer que la altura se ajuste automáticamente para mantener la proporción */
 }
 
@@ -141,3 +150,65 @@ footer {
   float: right;
   cursor: pointer;
 }
+
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: absolute;
+  background-color: #1a6292; /* Fondo azul claro */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px; /* Bordes suaves */
+  z-index: 1;
+  transform: translate(-50%, 0%); /* Centra el modal correctamente */
+}
+
+.modal-content {
+  width: 190px; /* Ancho del contenido del modal */
+  margin: auto;
+}
+
+/* Añade margen inferior para separación entre líneas */
+.modal-content label,
+.modal-content input,
+.modal-content button {
+  margin-bottom: 10px;
+}
+
+/* Alinea el botón de cierre a la derecha del modal */
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* Estilos del modal de registro */
+#registroModal {
+  display: none;
+  position: absolute;
+  background-color: #1a6292; /* Fondo azul claro */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px; /* Bordes suaves */
+  z-index: 1;
+  transform: translate(-50%, 0%); /* Centra el modal correctamente */
+}
+
+/* Estilos compartidos para el contenido del modal */
+.modal-content {
+  width: 190px; /* Ancho del contenido del modal */
+  margin: auto;
+}
+
+/* Añade margen inferior para separación entre líneas */
+.modal-content label,
+.modal-content input,
+.modal-content button {
+  margin-bottom: 10px;
+}
+
+/* Alinea el botón de cierre a la derecha del modal */
+.close {
+  float: right;
+  cursor: pointer;
+}
+

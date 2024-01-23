@@ -10,14 +10,19 @@
     <header>
       <h1 class="main-title">ACTUALIDAD POLICIAL</h1>
       <div class="header-top">
-        <div class="logo">
-          <img src="imagens/police_11376393.png" alt="Logo de la policía" />
-        </div>
+        <a href="index.html"> <!-- Ajusta la URL según la estructura de tu proyecto -->
+          <div class="logo">
+            <img src="imagens/police_11376393.png" alt="Logo de la policía" />
+          </div>
+        </a>
       </div>
       <nav>
         <div class="header-buttons">
-          <button id="contactoButton">CONTACTO</button>
-          <button id="registroButton">REGISTRO</button>
+          <!-- Botón de contacto -->
+<button id="contactoButton" onclick="openContactModal()">Contacto</button>
+
+<!-- Botón de registro -->
+<button id="registroButton" onclick="openRegistroModal()">Registro</button>
         </div>
       </nav>
     </header>
@@ -25,42 +30,69 @@
     <main>
       <section id="six-buttons">
         <div class="button-container">
-          <button>CONFERENCIAS</button>
-          <button>TALLERES</button>
-          <button>SEGURIDAD</button>
-          <button>INFORMACION</button>
-          <button>NOTICIAS</button>
-
+          <button onclick="mostrarEventos('Conferencias')">CONFERENCIAS</button>
+          <button onclick="mostrarEventos('Talleres')">TALLERES</button>
+          <button onclick="mostrarEventos('Seguridad')">SEGURIDAD</button>
+          <button onclick="mostrarEventos('Informacion')">INFORMACION</button>
+          <button onclick="mostrarEventos('Noticias')">NOTICIAS</button>
+  
           <!-- Agregar el campo de entrada y el botón de búsqueda con IDs -->
           <input type="text" id="searchInput" placeholder="Buscar por título o descripción">
-          <button type="button" id="buscarButton">BUSCAR</button>
+          <button type="button" onclick="buscarEventos()">BUSCAR</button>
         </div>
       </section>
-
+  
       <div id="categories"></div>
     </main>
 
-    <!-- Modal de contacto -->
-    <div id="contactModal" class="modal">
-      <div class="modal-content">
-        <span id="closeModal" class="close">&times;</span>
-        <h2>Contacto</h2>
-        <!-- Campos de contacto -->
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+    
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
 
-        <label for="codigoPostal">Código Postal:</label>
-        <input type="text" id="codigoPostal" name="codigoPostal" placeholder="Tu código postal">
+   <!-- Modal de contacto -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+      <span id="closeContactModal" class="close" onclick="closeModal('contactModal')">&times;</span>
+      <h2>Contacto</h2>
+      <!-- Campos de contacto -->
+      <label for="contactNombre">Nombre:</label>
+      <input type="text" id="contactNombre" name="contactNombre" placeholder="Tu nombre">
 
-        <button id="submitBtn">Enviar</button>
-      </div>
-    </div>
+      <label for="contactTelefono">Teléfono:</label>
+      <input type="tel" id="contactTelefono" name="contactTelefono" placeholder="Tu teléfono">
+
+      <label for="contactEmail">Correo electrónico:</label>
+      <input type="email" id="contactEmail" name="contactEmail" placeholder="Tu correo electrónico">
+
+      <label for="contactCodigoPostal">Código Postal:</label>
+      <input type="text" id="contactCodigoPostal" name="contactCodigoPostal" placeholder="Tu código postal">
+
+      <button id="contactSubmitBtn" onclick="submitForm()">Enviar</button>
+  </div>
+</div>
+
+<!-- Modal de registro -->
+<div id="registroModal" class="modal">
+  <div class="modal-content">
+      <span id="closeRegistroModal" class="close" onclick="closeModal('registroModal')">&times;</span>
+      <h3>Formulario de Registro</h3>
+      <!-- Campos de registro -->
+      <label for="registroNombre">Nombre:</label>
+      <input type="text" id="registroNombre" name="registroNombre" placeholder="Tu nombre">
+
+      <label for="registroTelefono">Teléfono:</label>
+      <input type="tel" id="registroTelefono" name="registroTelefono" placeholder="Tu teléfono">
+
+      <label for="registroEmail">Correo electrónico:</label>
+      <input type="email" id="registroEmail" name="registroEmail" placeholder="Tu correo electrónico">
+
+      <label for="registroCodigoPostal">Código Postal:</label>
+      <input type="text" id="registroCodigoPostal" name="registroCodigoPostal" placeholder="Tu código postal">
+
+      <button id="registroSubmitBtn" onclick="submitForm()">Enviar</button>
+  </div>
+</div>
+
 
     <footer>
       <p>&copy; 2024 ACTUALIDAD POLICIAL + LOGO 112</p>
