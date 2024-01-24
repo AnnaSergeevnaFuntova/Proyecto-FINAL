@@ -45,20 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Logo
+
+
 document.addEventListener("DOMContentLoaded", function() {
-  // Selecciona el enlace del logo por su id
-  var logoLink = document.getElementById("logoLink");
+  const logoContainer = document.getElementById("logoContainer");
 
-  // Agrega un evento de clic al enlace del logo
-  logoLink.addEventListener("click", function(event) {
-    // Evita que el enlace realice la acción por defecto (navegar a la página actual)
+  logoContainer.addEventListener("click", function(event) {
     event.preventDefault();
-
-    // Redirige a la página principal (ajusta la URL según tu estructura de directorios y nombre de página principal)
-    window.location.href = "index.html"; // Cambia "index.html" al nombre de tu página principal
+    goToHomePage(); // Asegúrate de tener la función goToHomePage definida en tu código
   });
 });
+
+
 
 function buscarEventos() {
   const searchText = document.getElementById("searchInput").value.toLowerCase();
