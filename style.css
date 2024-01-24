@@ -24,16 +24,24 @@ header {
   transform: translate(-50%, -50%); /* Centra el título en ambas direcciones */
   font-size: 40px; /* Tamaño de la letra deseado */
 }
-
-.logo img {
-  max-width: 80px;
-  max-height: 100px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: white; /* Establece el fondo blanco */
+#logoContainer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
+#logoContainer:hover {
+  transform: scale(1.1);
+}
+
+#logoLink {
+  display: block;
+  width: 40px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Esto mantiene la proporción original */
+  text-decoration: none;
+}
 nav ul {
   list-style: none;
   padding: 0;
