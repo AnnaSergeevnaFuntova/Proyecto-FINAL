@@ -45,92 +45,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
+// Logo para volver a la pagina principal
 document.addEventListener("DOMContentLoaded", function() {
   const logoContainer = document.getElementById("logoContainer");
 
   logoContainer.addEventListener("click", function(event) {
     event.preventDefault();
-    goToHomePage(); // Asegúrate de tener la función goToHomePage definida en tu código
+    goToHomePage(); // Llamada a la función para redirigir a la página principal
   });
+
+  // Función para redirigir a la página de inicio
+  function goToHomePage() {
+    window.location.href = "index.html"; // Cambia la URL según la estructura de tu proyecto
+  }
 });
 
-
-
-function buscarEventos() {
-  const searchText = document.getElementById("searchInput").value.toLowerCase();
-
-  // Obtener todas las tarjetas de eventos
-  const eventCards = document.querySelectorAll('.event-card');
-
-  // Filtrar tarjetas de eventos según el texto de búsqueda
-  eventCards.forEach(card => {
-    const title = card.querySelector('h3').textContent.toLowerCase();
-    const description = card.querySelector('p').textContent.toLowerCase();
-
-    if (title.includes(searchText) || description.includes(searchText)) {
-      card.style.display = 'block';  // Mostrar la tarjeta si coincide
-    } else {
-      card.style.display = 'none';   // Ocultar la tarjeta si no coincide
-    }
-  });
-}
-
-function createCategoryCard(category) {
-  const card = document.createElement("div");
-  card.classList.add("category-card");
-
-  const categoryTitle = document.createElement("h2");
-  categoryTitle.textContent = category.name;
-
-  card.appendChild(categoryTitle);
-
-  return card;
-}
-
-function createEventCard(event) {
-  const card = document.createElement("div");
-  card.classList.add("event-card");
-
-  const image = document.createElement("img");
-  image.src = event.image;
-  image.alt = event.title;
-
-  const title = document.createElement("h3");
-  title.textContent = event.title;
-
-  const description = document.createElement("p");
-  description.textContent = event.description;
-
-  card.appendChild(image);
-  card.appendChild(title);
-  card.appendChild(description);
-
-  // Añadir propiedades adicionales si están definidas en el evento
-  if (event.type) {
-    const type = document.createElement("p");
-    type.textContent = `Type: ${event.type}`;
-    card.appendChild(type);
-  }
-
-  if (event.location) {
-    const location = document.createElement("p");
-    location.textContent = `Location: ${event.location}`;
-    card.appendChild(location);
-  }
-
-  if (event.date) {
-    const date = document.createElement("p");
-    date.textContent = `Date: ${event.date}`;
-    card.appendChild(date);
-  }
-
-  return card;
-}
-
  // Modales
-function openContactModal() {
+ function openContactModal() {
   const contactoButton = document.getElementById("contactoButton");
   const modal = document.getElementById("contactModal");
 
@@ -179,4 +110,174 @@ function submitForm() {
   closeModal("registroModal");
 }
 
+
+
+// Buscador de eventos
+function buscarEventos() {
+  const searchText = document.getElementById("searchInput").value.toLowerCase();
+
+  // Obtener todas las tarjetas de eventos
+  const eventCards = document.querySelectorAll('.event-card');
+
+  // Filtrar tarjetas de eventos según el texto de búsqueda
+  eventCards.forEach(card => {
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    const description = card.querySelector('p').textContent.toLowerCase();
+
+    if (title.includes(searchText) || description.includes(searchText)) {
+      card.style.display = 'block';  // Mostrar la tarjeta si coincide
+    } else {
+      card.style.display = 'none';   // Ocultar la tarjeta si no coincide
+    }
+  });
+}
+
+// Fizualizacion de los eventos
+function createCategoryCard(category) {
+  const card = document.createElement("div");
+  card.classList.add("category-card");
+
+  const categoryTitle = document.createElement("h2");
+  categoryTitle.textContent = category.name;
+
+  card.appendChild(categoryTitle);
+
+  return card;}
+
+  function createEventCard(event, index) {
+    const cardId = `eventCard_${index}`;
+  
+    const card = document.createElement("div");
+    card.classList.add("event-card");
+    card.id = cardId;
+  
+    const image = document.createElement("img");
+    image.src = event.image;
+    image.alt = event.title;
+  
+    const title = document.createElement("h3");
+    title.textContent = event.title;
+  
+    const description = document.createElement("p");
+    description.textContent = event.description;
+  
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(description);
+
+  // Añadir propiedades adicionales si están definidas en el evento
+  if (event.type) {
+    const type = document.createElement("p");
+    type.textContent = `Type: ${event.type}`;
+    card.appendChild(type);
+  }
+
+  if (event.location) {
+    const location = document.createElement("p");
+    location.textContent = `Location: ${event.location}`;
+    card.appendChild(location);
+  }
+
+  if (event.date) {
+    const date = document.createElement("p");
+    date.textContent = `Date: ${event.date}`;
+    card.appendChild(date);
+  }
+
+  if (event.type) {
+    card.setAttribute('data-category', event.type.toLowerCase());
+  }
+
+    // Agregar el event listener para ampliar al hacer clic
+    card.addEventListener("click", function () {
+      mostrarInformacionDetallada(cardId);
+    });
+  
+
+  return card;
+}
+
+function mostrarDetalleEvento(eventCard) {
+  // Obtener la información del evento desde la tarjeta
+  const title = eventCard.querySelector('h3').textContent;
+  const description = eventCard.querySelector('p').textContent;
+  // Obtener más información según sea necesario
+
+  // Crear un contenedor para mostrar la información detallada
+  const detalleContainer = document.createElement('div');
+  detalleContainer.classList.add('detalle-evento');
+
+  // Crear elementos para mostrar la información detallada
+  const titleElement = document.createElement('h3');
+  titleElement.textContent = title;
+
+  const descriptionElement = document.createElement('p');
+  descriptionElement.textContent = description;
+  // Agregar más elementos según sea necesario
+
+  // Agregar elementos al contenedor
+  detalleContainer.appendChild(titleElement);
+  detalleContainer.appendChild(descriptionElement);
+  // Agregar más elementos según sea necesario
+
+  // Mostrar el contenedor en alguna parte de tu página
+  document.body.appendChild(detalleContainer);
+}
+
+
+// Función para abrir el modal
+function abrirModalDetalles() {
+  const modal = document.getElementById("modalDetalles");
+  modal.style.display = "block";
+}
+
+// Función para cerrar el modal
+function cerrarModalDetalles() {
+  const modal = document.getElementById("modalDetalles");
+  modal.style.display = "none";
+}
+
+// Función para mostrar información detallada
+function mostrarInformacionDetallada(cardId) {
+  const card = document.getElementById(cardId);
+
+  // Obtén la información específica de la tarjeta
+  const title = card.querySelector('h3').textContent;
+  const description = card.querySelector('p').textContent;
+  // Añade más líneas según los campos que desees mostrar
+
+  // Actualiza el contenido del modal con la información específica
+  document.getElementById("modalTitulo").textContent = title;
+  document.getElementById("modalDescripcion").textContent = description;
+  // Actualiza más campos según los que hayas añadido
+
+  // Abre el modal
+  abrirModalDetalles();
+}
+
+
+
+
+
+
+
+
+// Mostrar eventos por categoria
+function mostrarEventos(tipo) {
+  // Obtener todas las tarjetas de eventos
+  const eventCards = document.querySelectorAll('.event-card');
+
+  // Establecer el estilo de visualización para todas las tarjetas
+  eventCards.forEach(card => {
+    card.style.display = 'none';
+  });
+
+  // Mostrar solo las tarjetas que coincidan con el tipo seleccionado
+  eventCards.forEach(card => {
+    const eventType = card.getAttribute('data-category').toLowerCase();
+    if (eventType === tipo.toLowerCase()) {
+      card.style.display = 'inline-block';
+    }
+  });
+}
 
