@@ -4,134 +4,183 @@
       "name": "Policía Nacional",
       "events": [
         {
-          "title": "Conferencia 1",
+          "title": "Conferencia de Seguridad Ciudadana",
           "type": "Conferencias",
-          "description": "Descripción",
-          "image": "imagens/OIP (1).jpg",
-          "location": "Lugar",
+          "description": "Conferencia sobre las últimas estrategias de seguridad ciudadana.",
+          "image": "imagens/OIP coferencia.jpg",
+          "location": "Madrid",
           "date": "2024-05-01"
         },
         {
-          "title": "Taller 1",
+          "title": "Taller de Investigación Criminal",
           "type": "Taller",
-          "description": "Descripción",
+          "description": "Taller práctico sobre técnicas modernas de investigación criminal.",
           "image": "imagens/fotonoticia_20180723153354_640.jpg",
-          "location": "Lugar",
+          "location": "Barcelona",
           "date": "2024-05-15"
         },
         {
-          "title": "seguridad 1",
+          "title": "Curso de Seguridad en el Trabajo",
           "type": "Seguridad",
-          "description": "Descripción",
+          "description": "Curso intensivo sobre medidas de seguridad en el trabajo policial.",
           "image": "imagens/Escuela_Nacional_Policia_España_Clase.jpg",
-          "location": "Lugar",
+          "location": "Valencia",
           "date": "2024-05-15"
         },
         {
-          "title": "Informacion 1",
+          "title": "Información sobre Nuevas Plazas",
           "type": "Informacion",
-          "description": "Descripción",
+          "description": "Sesión informativa sobre las nuevas plazas disponibles en la Policía Nacional.",
           "image": "imagens/admitidos-a-plazas-de-policia-nacional-768x512.jpg",
-          "location": "Lugar",
+          "location": "Sevilla",
           "date": "2024-05-15"
         },
         {
-          "title": "Noticias 1",
+          "title": "Noticias Importantes para el Personal",
           "type": "Noticias",
-          "description": "Descripción",
+          "description": "Anuncios y noticias importantes para el personal de la Policía Nacional.",
           "image": "imagens/OIP (4).jpg",
-          "location": "Lugar",
+          "location": "Zaragoza",
           "date": "2024-05-15"
+        },
+        {
+          "title": "Nuevo Evento 1",
+          "type": "Conferencias",
+          "description": "Descripción actualizada del nuevo evento 1.",
+          "image": "imagens/OIP mossos.jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-06-01"
+        },
+        {
+          "title": "Nuevo Evento 2",
+          "type": "Taller",
+          "description": "Descripción actualizada del nuevo evento 2.",
+          "image": "imagens/OIP (4).jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-06-15"
+        },
+        {
+          "title": "Nuevo Evento 3",
+          "type": "Seguridad",
+          "description": "Descripción actualizada del nuevo evento 3.",
+          "image": "imagens/OIP (2).jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-07-01"
         }
-      ]
+      ]  
     },
     {
       "name": "Policía Local",
       "events": [
         {
-          "title": "Conferencia 2",
+          "title": "Conferencia de Normativas Locales",
           "type": "Conferencias",
-          "description": "Descripción",
-          "image": "url_de_la_imagen3.jpg",
-          "location": "Lugar",
+          "description": "Conferencia sobre las normativas locales y su impacto en la labor policial.",
+          "image": "imagens/Local conferencia.jpg",
+          "location": "Valencia",
           "date": "2024-06-01"
         },
         {
-          "title": "Taller 2",
+          "title": "Taller de Resolución de Conflictos",
           "type": "Taller",
-          "description": "Descripción",
-          "image": "url_de_la_imagen4.jpg",
-          "location": "Lugar",
+          "description": "Taller práctico sobre técnicas de resolución de conflictos en el ámbito local.",
+          "image": "imagens/Local talleres.jpg",
+          "location": "Sevilla",
           "date": "2024-06-15"
         },
         {
-          "title": "seguridad 2",
+          "title": "Curso de Seguridad Urbana",
           "type": "Seguridad",
-          "description": "Descripción",
-          "image": "",
-          "location": "Lugar",
+          "description": "Curso enfocado en estrategias de seguridad urbana para la policía local.",
+          "image": "imagens/OposicionesPolociaLocalparaTodaEspaña.jpg",
+          "location": "Barcelona",
           "date": "2024-05-15"
         },
         {
-          "title": "Informacion 2",
+          "title": "Información sobre Nuevos Reclutas",
           "type": "Informacion",
-          "description": "Descripción",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar",
+          "description": "Sesión informativa para los nuevos reclutas que se unirán a la Policía Local.",
+          "image": "imagens/local seguridad.jpg",
+          "location": "Madrid",
           "date": "2024-05-15"
         },
         {
-          "title": "Noticias 2",
+          "title": "Noticias de Interés Local",
           "type": "Noticias",
-          "description": "Descripción",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar",
+          "description": "Actualizaciones y noticias de interés para la comunidad local.",
+          "image": "imagens/local noticias.jpg",
+          "location": "Zaragoza",
           "date": "2024-05-15"
+        },
+        {
+          "title": "Nuevo Evento 3",
+          "type": "Seguridad",
+          "description": "Descripción actualizada del nuevo evento 3.",
+          "image": "imagens/local segiridad1.jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-06-30"
+        },
+        {
+          "title": "Nuevo Evento 4",
+          "type": "Informacion",
+          "description": "Descripción actualizada del nuevo evento 4.",
+          "image": "imagens/OIP (3).jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-07-15"
         }
       ]
     },
     {
-      "name": "Mossos d'esquadra ",
+      "name": "Mossos d'esquadra",
       "events": [
         {
-          "title": "Conferencia 3",
+          "title": "Conferencia sobre Seguridad Regional",
           "type": "Conferencias",
-          "description": "Descripción",
-          "image": "url_de_la_imagen3.jpg",
-          "location": "Lugar",
+          "description": "Conferencia sobre las medidas de seguridad regional implementadas por los Mossos d'esquadra.",
+          "image": "imagens/OIP mossos.jpg",
+          "location": "Barcelona",
           "date": "2024-06-01"
         },
         {
-          "title": "Taller 3",
+          "title": "Taller Práctico de Patrullaje",
           "type": "Taller",
-          "description": "Descripción",
-          "image": "url_de_la_imagen4.jpg",
-          "location": "Lugar",
+          "description": "Taller práctico sobre estrategias efectivas de patrullaje.",
+          "image": "imagens/mossos taller.jpg",
+          "location": "Girona",
           "date": "2024-06-15"
         },
         {
-          "title": "Seguridad 3",
+          "title": "Curso de Seguridad en Grandes Eventos",
           "type": "Seguridad",
-          "description": "Descripción",
-          "image": "url_de_la_imagen5.jpg",
-          "location": "Lugar",
+          "description": "Curso especializado en seguridad durante grandes eventos para los Mossos d'esquadra.",
+          "image": "imagens/OIP mossos 1.jpg",
+          "location": "Lleida",
           "date": "2024-07-01"
         },
         {
-          "title": "Información 3",
+          "title": "Información sobre Nuevas Incorporaciones",
           "type": "Información",
-          "description": "Descripción",
-          "image": "url_de_la_imagen6.jpg",
-          "location": "Lugar",
+          "description": "Sesión informativa sobre las nuevas incorporaciones a los Mossos d'esquadra.",
+          "image": "imagens/OIP mossos2.jpg",
+          "location": "Tarragona",
           "date": "2024-07-15"
         },
         {
-          "title": "Noticias 3",
+          "title": "Noticias Regionales Destacadas",
           "type": "Noticias",
-          "description": "Descripción",
-          "image": "url_de_la_imagen2.jpg",
-          "location": "Lugar",
+          "description": "Noticias destacadas a nivel regional para los Mossos d'esquadra.",
+          "image": "imagens/mossos noticias.jpg",
+          "location": "Barcelona",
           "date": "2024-05-15"
+        },
+    
+        {
+          "title": "Nuevo Evento 6",
+          "type": "Noticias",
+          "description": "Descripción actualizada del nuevo evento 6.",
+          "image": "imagens/mossos taller.jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-08-15"
         }
       ]
     }
