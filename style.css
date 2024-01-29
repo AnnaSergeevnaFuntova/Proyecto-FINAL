@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fcf1f1; 
+  background-color: #ebe9e9; 
 }
 
 header {
@@ -90,7 +90,7 @@ main {
 .header-buttons .other-buttons:hover,
 .header-buttons #buscarButton:hover {
   transform: scale(0.9);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(250, 248, 248, 0.904);
   background-color: #2980b9;
 }
 
@@ -113,7 +113,7 @@ main {
 
 .other-buttons:hover {
   transform: scale(0.9);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgb(248, 248, 248);
   background-color: #2980b9;
 }
 
@@ -157,7 +157,7 @@ footer {
   display: none;
   position: absolute;
   background-color: #1a6292;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgb(247, 246, 246);
   padding: 20px;
   border-radius: 5px;
   z-index: 1;
@@ -197,17 +197,24 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f6f8fa;
-  padding: 20px;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Fondo blanco */
+  padding: 30px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 8px;
+  text-align: center;
 }
 
+
 .close {
-  color: #333;
+  color: #666;
   float: right;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.close:hover {
+  color: #333; /* Cambiado el color al pasar el ratón */
 }

@@ -47,7 +47,7 @@
           "title": "Nuevo Evento 1",
           "type": "Conferencias",
           "description": "Descripción actualizada del nuevo evento 1.",
-          "image": "ruta_de_la_imagen.jpg",
+          "image": "imagens/OIP mossos.jpg",
           "location": "Otra Ciudad",
           "date": "2024-06-01"
         },
@@ -55,11 +55,19 @@
           "title": "Nuevo Evento 2",
           "type": "Taller",
           "description": "Descripción actualizada del nuevo evento 2.",
-          "image": "ruta_de_la_imagen.jpg",
+          "image": "imagens/OIP (4).jpg",
           "location": "Otra Ciudad",
           "date": "2024-06-15"
+        },
+        {
+          "title": "Nuevo Evento 3",
+          "type": "Seguridad",
+          "description": "Descripción actualizada del nuevo evento 3.",
+          "image": "imagens/OIP (2).jpg",
+          "location": "Otra Ciudad",
+          "date": "2024-07-01"
         }
-      ]
+      ]  
     },
     {
       "name": "Policía Local",
@@ -108,7 +116,7 @@
           "title": "Nuevo Evento 3",
           "type": "Seguridad",
           "description": "Descripción actualizada del nuevo evento 3.",
-          "image": "ruta_de_la_imagen.jpg",
+          "image": "imagens/local segiridad1.jpg",
           "location": "Otra Ciudad",
           "date": "2024-06-30"
         },
@@ -116,7 +124,7 @@
           "title": "Nuevo Evento 4",
           "type": "Informacion",
           "description": "Descripción actualizada del nuevo evento 4.",
-          "image": "ruta_de_la_imagen.jpg",
+          "image": "imagens/OIP (3).jpg",
           "location": "Otra Ciudad",
           "date": "2024-07-15"
         }
@@ -165,19 +173,12 @@
           "location": "Barcelona",
           "date": "2024-05-15"
         },
-        {
-          "title": "Nuevo Evento 5",
-          "type": "Seguridad",
-          "description": "Descripción actualizada del nuevo evento 5.",
-          "image": "ruta_de_la_imagen.jpg",
-          "location": "Otra Ciudad",
-          "date": "2024-07-30"
-        },
+    
         {
           "title": "Nuevo Evento 6",
           "type": "Noticias",
           "description": "Descripción actualizada del nuevo evento 6.",
-          "image": "ruta_de_la_imagen.jpg",
+          "image": "imagens/mossos taller.jpg",
           "location": "Otra Ciudad",
           "date": "2024-08-15"
         }
