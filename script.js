@@ -168,19 +168,19 @@ function createCategoryCard(category) {
   // Añadir propiedades adicionales si están definidas en el evento
   if (event.type) {
     const type = document.createElement("p");
-    type.textContent = `Type: ${event.type}`;
+    type.textContent = `Tipo: ${event.type}`;
     card.appendChild(type);
   }
 
   if (event.location) {
     const location = document.createElement("p");
-    location.textContent = `Location: ${event.location}`;
+    location.textContent = `Donde: ${event.location}`;
     card.appendChild(location);
   }
 
   if (event.date) {
     const date = document.createElement("p");
-    date.textContent = `Date: ${event.date}`;
+    date.textContent = `Cuando: ${event.date}`;
     card.appendChild(date);
   }
 
@@ -254,8 +254,6 @@ function mostrarInformacionDetallada(cardId) {
   // Abre el modal
   abrirModalDetalles();
 }
-
-
 
 
 

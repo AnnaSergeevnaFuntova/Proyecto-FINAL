@@ -1,29 +1,29 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ebe7e7; /* Color gris claro */
+  background-color: #fcf1f1; 
 }
 
 header {
   position: relative;
   background-image: url("imagens/Portada.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 60% center; /* Ajusta el valor de porcentaje según sea necesario */
   background-repeat: no-repeat;
-  padding: 160px 0; /* Eliminamos el relleno en los lados y ajustamos el relleno en la parte superior e inferior */
-  margin: 0; /* Agregamos margen 0 para que no haya espacio en los lados */
+  padding: 160px 0;
+  margin: 0;
   text-align: center;
-  color: rgb(247, 245, 245); /* Color del texto del título */
+  color: rgb(247, 245, 245);
 }
 
 .main-title {
   position: absolute;
-  top: 10%; /* Ajusta la posición vertical al centro del contenedor principal */
-  left: 50%; /* Ajusta la posición horizontal al centro del contenedor principal */
-  transform: translate(-50%, -50%); /* Centra el título en ambas direcciones */
-  font-size: 40px; /* Tamaño de la letra deseado */
+  top: 20%; /* Ajusta la posición vertical */
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  text-align: right;
 }
+
 #logoContainer {
   position: fixed;
   top: 20px;
@@ -38,10 +38,11 @@ header {
 
 #logoLink {
   display: block;
-  width: 40px; /* Ajusta el tamaño según tus necesidades */
-  height: auto; /* Esto mantiene la proporción original */
+  width: 40px;
+  height: auto;
   text-decoration: none;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -54,72 +55,93 @@ nav ul li {
 }
 
 main {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: none; /* Quita el límite de ancho */
+  margin: 10px auto;
 }
 
 .header-buttons {
   position: absolute;
   top: 10px;
   right: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.header-buttons button {
-  background-color: #f7f9fa;
-  color: #030303;
+.header-buttons button,
+.header-buttons .other-buttons,
+.header-buttons #buscarButton {
+  background-color: #3498db;
+  color: #fff;
   padding: 8px 12px;
   border: none;
   cursor: pointer;
   margin-left: 10px;
-  transition: transform 0.3s, box-shadow 0.3s; /* Agregar transición para transform y box-shadow */
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
-.header-buttons button:hover {
+.header-buttons button:not(:last-child),
+.header-buttons .other-buttons:not(:last-child),
+.header-buttons #buscarButton:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-buttons button:hover,
+.header-buttons .other-buttons:hover,
+.header-buttons #buscarButton:hover {
   transform: scale(0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #2980b9;
 }
+
 .button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 20px; /* Espaciado superior para separar de los botones */
 }
 
-.button-container button {
-  padding: 10px 20px;
-  background-color: #555;
-  color: white;
+.other-buttons {
+  background-color: #1378bb;
+  color: #fff;
+  padding: 8px 12px;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s; /* Agregar transición para transform y box-shadow */
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  margin-right: 10px;
 }
-.button-container button:hover {
+
+.other-buttons:hover {
   transform: scale(0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #2980b9;
 }
+
 .event-card {
   border: 1px solid #faf7f7;
-  padding: 5px; /* Reducir el relleno interno */
-  margin-right: 10px; /* Agregar un margen derecho para separar los elementos */
+  padding: 15px; /* Aumenta el relleno interno */
+  margin-right: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
-  transform: scale(0.9); /* Establecer un tamaño inicial más pequeño */
-  width: calc(20% - 10px); /* Calcula el ancho para que haya 5 elementos por fila, considerando el margen */
-  box-sizing: border-box; /* Incluir el borde y el relleno en el ancho y alto totales */
-  display: inline-block; /* Hacer que los elementos estén en línea */
+  transform: scale(0.9);
+  width: calc(20% - 30px); /* Ajusta el ancho según tus necesidades */
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  box-sizing: border-box;
+  display: inline-block;
 }
 
-
-/* Limpiar el margen derecho del último elemento */
 .event-card:last-child {
   margin-right: 0;
 }
 
 .event-card:hover {
-  transform: scale(1); /* Ajustar el tamaño al 100% al pasar el cursor sobre el elemento */
+  transform: scale(1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .event-card img {
-  width: 100%; /* Establecer un ancho del 100% para ocupar completamente el contenedor */
-  height: auto; /* Hacer que la altura se ajuste automáticamente para mantener la proporción */
+  width: 100%;
+  height: 70%; /* Ajusta la altura de la imagen dentro de la tarjeta */
+  object-fit: cover; /* Ajusta la forma en que la imagen se ajusta a la tarjeta */
 }
 
 footer {
@@ -128,94 +150,42 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
+  position: relative;
 }
 
-/* Estilos del modal */
 .modal {
   display: none;
   position: absolute;
-  background-color: #1a6292; /* Fondo azul claro */
+  background-color: #1a6292;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  border-radius: 5px; /* Bordes suaves */
+  border-radius: 5px;
   z-index: 1;
-  transform: translate(-50%, 0%); /* Centra el modal correctamente */
+  transform: translate(-50%, 0%);
 }
 
-.modal-content {
-  width: 190px; /* Ancho del contenido del modal */
-  margin: auto;
-}
-
-/* Añade margen inferior para separación entre líneas */
-.modal-content label,
-.modal-content input,
-.modal-content button {
-  margin-bottom: 10px;
-}
-
-/* Alinea el botón de cierre a la derecha del modal */
-.close {
-  float: right;
-  cursor: pointer;
-}
-
-/* Estilos del modal */
-.modal {
-  display: none;
-  position: absolute;
-  background-color: #1a6292; /* Fondo azul claro */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  border-radius: 5px; /* Bordes suaves */
-  z-index: 1;
-  transform: translate(-50%, 0%); /* Centra el modal correctamente */
-}
-
-.modal-content {
-  width: 190px; /* Ancho del contenido del modal */
-  margin: auto;
-}
-
-/* Añade margen inferior para separación entre líneas */
-.modal-content label,
-.modal-content input,
-.modal-content button {
-  margin-bottom: 10px;
-}
-
-/* Alinea el botón de cierre a la derecha del modal */
-.close {
-  float: right;
-  cursor: pointer;
-}
-
-/* Estilos del modal de registro */
 #registroModal {
   display: none;
   position: absolute;
-  background-color: #1a6292; /* Fondo azul claro */
+  background-color: #1a6292;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  border-radius: 5px; /* Bordes suaves */
+  border-radius: 5px;
   z-index: 1;
-  transform: translate(-50%, 0%); /* Centra el modal correctamente */
+  transform: translate(-50%, 0%);
 }
 
-/* Estilos compartidos para el contenido del modal */
 .modal-content {
-  width: 190px; /* Ancho del contenido del modal */
+  width: 190px;
   margin: auto;
 }
 
-/* Añade margen inferior para separación entre líneas */
 .modal-content label,
 .modal-content input,
 .modal-content button {
   margin-bottom: 10px;
 }
 
-/* Alinea el botón de cierre a la derecha del modal */
 .close {
   float: right;
   cursor: pointer;
@@ -229,17 +199,13 @@ footer {
   transform: translate(-50%, -50%);
   background-color: #f6f8fa;
   padding: 20px;
-  max-width: 400px; /* Ajusta el tamaño según sea necesario */
+  max-width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
-.modal-content {
-  color: #333; /* Color de texto */
-}
-
 .close {
-  color: #333; /* Color del botón de cierre */
+  color: #333;
   float: right;
   font-size: 20px;
   font-weight: bold;
